@@ -1,14 +1,24 @@
-function Sample() {
-  return ( <h1>Welcome to React!</h1>)
-       
-
+import Sample from "./Components/Sample"
+import Clock from "./Components/clock"
+import StudentCard from "./Components/studentCard"
+import NavBar from "./Components/NavBar"
+import Footer from "./Components/Footer"
+import StudentCard1 from "./Components/StudentCard1"
+import WelcomeMessage from "./Components/WelcomeMessage"
+import Training from "./Components/Training"
+function App() {
+    return (  
+<div>
+  <NavBar/>
+  <StudentCard1/>
+  {/* <StudentCard/> */}
+ {/* <Sample/> */}
+ {/* <Clock/>  */}
+ <WelcomeMessage/>
+ <Training/>
+<Footer/>
+  </div>
+    )
 }
-export default Sample;
+export default App
 
-
-// function Sbutton() {
-//   return (
-//     <button>Click Me</button>
-//   )
-// }
-// export default Sbutton;
