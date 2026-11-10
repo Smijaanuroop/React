@@ -1,0 +1,86 @@
+/* ===== Training.jsx - Full CSS ===== */
+
+/* Blue Page Background - Like ID Card */
+.training-page {
+  background-color: #7A9CC6;
+  min-height: 100vh;
+  padding: 30px 0;
+}
+
+.training-title {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* White Student Card - Like ID Card */
+.student-card {
+  background-color: #FFFFFF;
+  border: none;
+  border-top: 6px solid #7C2D00;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+  transition: transform 0.2s;
+}
+
+/* Hover Effect - Card lifts up */
+.student-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.student-name {
+  color: #FF8C00;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.student-course {
+  color: #333333;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.student-session {
+  color: #666666;
+  margin-bottom: 0;
+}
+
+/* Authorize Signature - Like ID Card Bottom */
+.signature-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 15px;
+  padding-top: 10px;
+  border-top: 1px solid #EEEEEE;
+  font-size: 13px;
+}
+
+.barcode {
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 4px 10px;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* ===== Responsive - Mobile First ===== */
+
+/* Mobile - 1 Card */
+@media (max-width: 576px) {
+  .training-page {
+    padding: 20px 10px;
+  }
+  .student-name {
+    font-size: 20px;
+  }
+}
+
+/* Tablet - 2 Cards - Handled by Bootstrap Col */
+/* Desktop - 3 Cards - Handled by Bootstrap Col */

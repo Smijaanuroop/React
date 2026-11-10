@@ -6,6 +6,7 @@ import Footer from "./Components/Footer"
 import StudentCard1 from "./Components/StudentCard1"
 import WelcomeMessage from "./Components/WelcomeMessage"
 import Training from "./Components/Training"
+import List from "./Components/List"
 function App() {
     return (  
 <div>
@@ -16,6 +17,7 @@ function App() {
  {/* <Clock/>  */}
  <WelcomeMessage/>
  <Training/>
+ <List/>
 <Footer/>
   </div>
     )
