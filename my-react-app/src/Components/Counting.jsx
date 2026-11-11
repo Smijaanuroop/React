@@ -69,68 +69,74 @@ function Counting() {
 
   // 7. On-Off toggle
   const [isOn, setIsOn] = useState(false)
+       
+  // 8. SHOW/HIDE Toggle 
+   const [isAuth,setIsAuth]= useState(false)
+
+ const toggle = ()=> setIsAuth(!isAuth)
 
   return (
     <div style={{ padding: '20px', fontFamily: 'sans-serif' }}>
       <h1>React Practice - 7 Tasks</h1>
-      <hr />
+    <hr />
 
-      {/* 1. Add two numbers */}
-      <h2>1. Add Two Numbers</h2>
-      <input type="number" placeholder="First number" value={num1} onChange={(e) => setNum1(e.target.value)} />
-      <input type="number" placeholder="Second number" value={num2} onChange={(e) => setNum2(e.target.value)} />
-      <button onClick={addNumbers}>Add</button>
-      <p>Result: {sum}</p>
-      <hr />
-
-      {/* 2. Check match */}
-      <h2>2. Check If Text Matches</h2>
-      <input placeholder="Type here" value={text1} onChange={(e) => setText1(e.target.value)} />
-      <input placeholder="Type again" value={text2} onChange={(e) => setText2(e.target.value)} />
-      <p>{text1 === '' ? 'Type something...' : text1 === text2 ? '✅ Matched!' : '❌ Not Matching'}</p>
-      <hr />
-
-      {/* 3. Array of objects */}
-      <h2>3. Array of Objects using map</h2>
-      {students.map((student) => (
-        <div key={student.id}>
-          <p>{student.name} - {student.place}</p>
-        </div>
-      ))}
-      <hr />
-
-      {/* 4. <ul> <li> list> */}
-      <h2>4. List ul li</h2>
-      <ul>
-        {fruits.map((fruit, index) => (
-          <li key={index}>{fruit}</li>
-        ))}
-      </ul>
-      <hr />
-
-      {/* 5. Input to <h1> */}
-      <h2>5. Input to H1</h2>
-      <input placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
-      <h1>Hello, {name}</h1>
-      <hr />
-
-      {/* 6. Stopwatch */}
-      <h2>6. Stopwatch</h2>
-      <h1>{seconds} sec</h1>
-      <button onClick={() => setIsRunning(true)}>Start</button>
-      <button onClick={() => setIsRunning(false)}>Stop</button>
-      <button onClick={() => { setIsRunning(false); setSeconds(0) }}>Reset</button>
-      <hr />
-
-      {/* 7. ON-OFF Toggle */}
-      <h2>7. On-Off Toggle</h2>
-      <h3>{isOn ? ' ON' : ' OFF'}</h3>
-      <button onClick={() => setIsOn(!isOn)}>
-        {isOn ? 'Turn OFF' : 'Turn ON'}
-      </button>
-
+    {/* 1. Add two numbers */}
+  <h2>1. Add Two Numbers</h2>
+    <input type="number" placeholder="First number" value={num1} onChange={(e) => setNum1(e.target.value)} />
+    <input type="number" placeholder="Second number" value={num2} onChange={(e) => setNum2(e.target.value)} />
+    <button onClick={addNumbers}>Add</button>
+    <p>Result: {sum}</p>
+    <hr />
+    {/* 2. Check match */}
+    <h2>2. Check If Text Matches</h2>
+    <input placeholder="Type here" value={text1} onChange={(e) => setText1(e.target.value)} />
+    <input placeholder="Type again" value={text2} onChange={(e) => setText2(e.target.value)} />
+    <p>{text1 === '' ? 'Type something...' : text1 === text2 ? '✅ Matched!' : '❌ Not Matching'}</p>
+    <hr />
+    {/* 3. Array of objects */}
+    <h2>3. Array of Objects using map</h2>
+    {students.map((student) => (
+    <div key={student.id}>
+    <p>{student.name} - {student.place}</p>
     </div>
-  )
+    ))}
+    <hr />
+    {/* 4. <ul> <li> list> */}
+    <h2>4. List ul li</h2>
+    <ul>
+    {fruits.map((fruit, index) => (
+    <li key={index}>{fruit}</li>
+    ))}
+    </ul>
+    <hr />
+    {/* 5. Input to <h1> */}
+    <h2>5. Input to H1</h2>
+    <input placeholder="Enter your name" value={name} onChange={(e) => setName(e.target.value)} />
+    <h1>Hello, {name}</h1>
+    <hr />
+    {/* 6. Stopwatch */}
+    <h2>6. Stopwatch</h2>
+    <h1>{seconds} sec</h1>
+    <button onClick={() => setIsRunning(true)}>Start</button>
+    <button onClick={() => setIsRunning(false)}>Stop</button>
+    <button onClick={() => { setIsRunning(false); setSeconds(0) }}>Reset</button>
+    <hr />
+    {/* 7. ON-OFF Toggle */}
+    <h2>7. On-Off Toggle</h2>
+    <h3>{isOn ? ' ON' : ' OFF'}</h3>
+    <button onClick={() => setIsOn(!isOn)}>
+    {isOn ? 'Turn OFF' : 'Turn ON'}
+    </button>
+    <hr/>   
+
+{/* 8. SHOW/HIDE Toggle */}
+     
+ {/* use && operator */} 
+     {isAuth && <h2>Welcome User</h2> 
+    }
+    <button onClick={toggle}>{isAuth ? "Show" : "Hide"}</button>
+    </div>
+ )
 }
 
 export default Counting

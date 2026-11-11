@@ -9,6 +9,8 @@ import Training from "./Components/Training"
 import List from "./Components/List"
 import Products from "./Components/Products"
 import Counting from "./Components/Counting"
+import CounterCreate from "./Components/CounterCreate"
+import Message from "./Components/Message"
 function App() {
     return (  
 <div>
@@ -21,7 +23,10 @@ function App() {
  <Training/>
  <List/>
  <Products/>  */}
+ <CounterCreate/>
  <Counting/>
+
+ {/* <Message/> */}
 <Footer/>
   </div>
     )
