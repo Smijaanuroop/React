@@ -7,17 +7,21 @@ import StudentCard1 from "./Components/StudentCard1"
 import WelcomeMessage from "./Components/WelcomeMessage"
 import Training from "./Components/Training"
 import List from "./Components/List"
+import Products from "./Components/Products"
+import Counting from "./Components/Counting"
 function App() {
     return (  
 <div>
   <NavBar/>
-  <StudentCard1/>
+  {/* <StudentCard1/>
   {/* <StudentCard/> */}
  {/* <Sample/> */}
  {/* <Clock/>  */}
- <WelcomeMessage/>
+ {/* <WelcomeMessage/>
  <Training/>
  <List/>
+ <Products/>  */}
+ <Counting/>
 <Footer/>
   </div>
     )
