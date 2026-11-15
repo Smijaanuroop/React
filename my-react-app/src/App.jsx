@@ -10,24 +10,27 @@ import List from "./Components/List"
 import Products from "./Components/Products"
 import Counting from "./Components/Counting"
 import CounterCreate from "./Components/CounterCreate"
-import Message from "./Components/Message"
+import HooksUseEffect from "./Components/HooksUseEffect"
+import HooksErrorHandling from "./Components/HooksErrorHandling"
+import AskAI from "./Components/AskAI"
 function App() {
     return (  
 <div>
   <NavBar/>
-  {/* <StudentCard1/>
+  {/* <StudentCard1/> */}
   {/* <StudentCard/> */}
  {/* <Sample/> */}
  {/* <Clock/>  */}
- {/* <WelcomeMessage/>
- <Training/>
- <List/>
- <Products/>  */}
+ {/* <WelcomeMessage/> */}
+ {/* <Training/> */}
+ {/* <List/> */}
+ {/* <Products/>  */}
  <CounterCreate/>
  <Counting/>
-
- {/* <Message/> */}
+ <HooksUseEffect/>
+ <HooksErrorHandling/>
 <Footer/>
+<AskAI/>
   </div>
     )
 }

@@ -130,9 +130,9 @@ function Counting() {
     <hr/>   
 
 {/* 8. SHOW/HIDE Toggle */}
-     
- {/* use && operator */} 
-     {isAuth && <h2>Welcome User</h2> 
+    {/* use && operator */} 
+    <h2>8. SHOW/HIDE Toggle</h2>
+    {isAuth && <h2>Welcome User</h2> 
     }
     <button onClick={toggle}>{isAuth ? "Show" : "Hide"}</button>
     </div>
