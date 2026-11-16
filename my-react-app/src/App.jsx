@@ -12,6 +12,7 @@ import Counting from "./Components/Counting"
 import CounterCreate from "./Components/CounterCreate"
 import HooksUseEffect from "./Components/HooksUseEffect"
 import HooksErrorHandling from "./Components/HooksErrorHandling"
+import HooksUseContext from "./Components/HooksUseContext"
 import AskAI from "./Components/AskAI"
 function App() {
     return (  
@@ -29,6 +30,7 @@ function App() {
  <Counting/>
  <HooksUseEffect/>
  <HooksErrorHandling/>
+  <HooksUseContext />
 <Footer/>
 <AskAI/>
   </div>
@@ -36,3 +38,28 @@ function App() {
 }
 export default App
 
+
+// import React, { useState } from 'react'
+// import { Routes, Route } from "react-router-dom"
+
+// import NavBar from "./Components/NavBar"
+// import Home from "./Pages/Home"
+// import Register from "./Pages/Register"
+// import StudentDetails from "./Pages/StudentDetails"
+// function App() {
+//   const [student, setStudent] = useState(null)
+
+//   return (
+//     <div>
+//       <NavBar/>
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/register" element={<Register setStudent={setStudent} />} />
+//         <Route path="/student" element={<StudentDetails student={student} />} />
+//       </Routes>
+     
+//     </div>
+//   )
+// }
+
+// export default App
