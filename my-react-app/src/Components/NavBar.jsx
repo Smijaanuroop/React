@@ -39,7 +39,7 @@ function NavBar() {
   return (
     <div>
       
-      <Link to="/">Home</Link> | <Link to="/register">Register</Link> | <Link to="/student">Student</Link>
+      <Link to="/">Home</Link> | <Link to="/register">Register</Link> | <Link to="/Data">Add</Link>| <Link to="/student">Student</Link>
       <h1>Student Management</h1>
     </div>
   )

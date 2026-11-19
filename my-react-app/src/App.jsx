@@ -32,7 +32,7 @@
 //  <HooksErrorHandling/>
 //   <HooksUseContext />
 // <Footer/>
-// <AskAI/>
+// {/* <AskAI/> */}
 //   </div>
 //     )
 // }
@@ -46,6 +46,7 @@ import NavBar from "./Components/NavBar"
 import Home from "./Pages/Home"
 import Register from "./Pages/Register"
 import StudentDetails from "./Pages/StudentDetails"
+import UsingCRUDOperator from './Pages/UsingCRUDOperator'
 function App() {
   const [student, setStudent] = useState(null)
 
@@ -56,6 +57,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register setStudent={setStudent} />} />
         <Route path="/student" element={<StudentDetails student={student} />} />
+        <Route path="/Data" element={<UsingCRUDOperator />}/>
       </Routes>
      
     </div>
